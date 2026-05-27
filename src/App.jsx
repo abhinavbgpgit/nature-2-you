@@ -7,6 +7,8 @@ import CommunityPage from "./pages/CommunityPage"
 import FarmingModelPage from "./pages/FarmingModelPage"
 import HomePage from "./pages/HomePage"
 import NaturalFarmingPage from "./pages/NaturalFarmingPage"
+import CsrConceptPage from "./pages/CsrConceptPage"
+import Model1Page from "./pages/Model1Page"
 import ResearchPage from "./pages/ResearchPage"
 import VideosPage from "./pages/VideosPage"
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/blog" element={<BlogPage language={language} />} />
         <Route path="/research" element={<ResearchPage language={language} />} />
         <Route path="/community" element={<CommunityPage language={language} />} />
+        <Route path="/investor/csr-concept" element={<CsrConceptPage language={language} />} />
+        <Route path="/investor/model-1" element={<Model1Page />} />
       </Routes>
       <Footer language={language} />
     </main>
