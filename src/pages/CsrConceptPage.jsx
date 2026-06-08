@@ -175,6 +175,100 @@ const goalsContent = {
   },
 }
 
+const WHY_CARDS = [
+  { icon: "🏗️", gradient: "from-emerald-400 to-emerald-600" },
+  { icon: "🏘️", gradient: "from-orange-400 to-orange-500" },
+  { icon: "📋", gradient: "from-blue-400 to-blue-600" },
+  { icon: "🌍", gradient: "from-teal-400 to-teal-600" },
+  { icon: "♻️", gradient: "from-green-400 to-green-600" },
+]
+
+const whyContent = {
+  en: {
+    badge: "WHY CHOOSE US",
+    heading1: "Why Us?",
+    heading2: "Why Companies Need Us",
+    subtitle: "India's large companies are legally required to spend on CSR. They need reliable implementation partners who don't just distribute funds — they create measurable, ground-level impact.",
+    challengeTitle: "The Challenge Companies Face",
+    challengeText: "Under the CSR Act, every large company must mandatorily spend at least 2% of net profit on CSR. But without the right partner, projects fail, reporting has gaps, and impact cannot be measured. We provide the complete end-to-end solution to exactly this problem.",
+    cardsHeading: "We Deliver These 5 Key Benefits",
+    cardsSub: "Each point is our core strength",
+    cards: [
+      { title: "Ground Execution", desc: "Effective and transparent execution at the grassroots level. Our team stays on-ground and personally supervises every project from start to finish." },
+      { title: "Village-Level Reach", desc: "Capability to work in remote villages across India. We understand rural communities' needs and maintain a trusted, long-term presence there." },
+      { title: "Proper Reporting", desc: "Audit-ready reporting with full compliance and transparency. Every rupee is accounted for, every impact is documented and independently verifiable." },
+      { title: "Climate Impact Measurement", desc: "We track measurable climate impact for every project — quantifying carbon footprint reduction, CO₂ savings, and broader environmental benefits." },
+      { title: "Sustainable Projects", desc: "We execute long-term sustainable projects — not one-time charity. Initiatives designed to run for years and genuinely empower local communities." },
+    ],
+    stats: [
+      { value: "50+", label: "Villages Covered" },
+      { value: "100%", label: "Compliance Rate" },
+      { value: "25+", label: "Corporate Partners" },
+      { value: "10K+", label: "Lives Impacted" },
+    ],
+    ctaHeading1: "We Provide The Exact",
+    ctaHeading2: "Solution To This Problem",
+    ctaText: "Whether your company's focus is education, healthcare, environment, or rural development — we are ready to convert your CSR funds into maximum, measurable social impact.",
+    checklist: [
+      "Execute projects at the ground level",
+      "Work directly in villages and rural areas",
+      "Deliver proper compliance reporting",
+      "Measure real climate and social impact",
+      "Run long-term sustainable projects",
+    ],
+    cta: "Partner With Us Today →",
+  },
+  hi: {
+    badge: "हमें क्यों चुनें",
+    heading1: "हम क्यों?",
+    heading2: "कंपनियों को हमारी जरूरत क्यों होगी?",
+    subtitle: "भारत की बड़ी कंपनियों को कानूनी रूप से CSR पर खर्च करना अनिवार्य है। उन्हें ऐसे भरोसेमंद कार्यान्वयन भागीदारों की जरूरत है जो सिर्फ धन वितरित न करें — बल्कि मापनीय जमीनी प्रभाव पैदा करें।",
+    challengeTitle: "कंपनियों के सामने चुनौती",
+    challengeText: "CSR अधिनियम के तहत हर बड़ी कंपनी को अपने शुद्ध लाभ का कम से कम 2% CSR पर खर्च करना अनिवार्य है। लेकिन सही भागीदार न मिलने से परियोजनाएं विफल हो जाती हैं, रिपोर्टिंग में कमियाँ रहती हैं, और प्रभाव को मापा नहीं जा पाता। हम ठीक इसी समस्या का पूर्ण समाधान प्रदान करते हैं।",
+    cardsHeading: "हम कंपनियों को ये 5 प्रमुख लाभ देते हैं",
+    cardsSub: "हर बिंदु हमारी मूल ताकत है",
+    cards: [
+      { title: "जमीनी क्रियान्वयन", desc: "जमीनी स्तर पर प्रभावी और पारदर्शी क्रियान्वयन। हमारी टीम हर परियोजना की शुरू से अंत तक व्यक्तिगत रूप से निगरानी करती है।" },
+      { title: "ग्राम स्तरीय पहुँच", desc: "दूरदराज के गाँवों में जाकर काम करने की क्षमता। हम ग्रामीण समुदायों की जरूरतें समझते हैं और वहाँ दीर्घकालिक विश्वसनीय उपस्थिति रखते हैं।" },
+      { title: "उचित रिपोर्टिंग", desc: "पूर्ण अनुपालन और पारदर्शिता के साथ ऑडिट-तैयार रिपोर्टिंग। हर रुपये का हिसाब, हर प्रभाव दस्तावेज़ीकृत और स्वतंत्र रूप से सत्यापनीय।" },
+      { title: "जलवायु प्रभाव मापन", desc: "हर परियोजना का मापनीय जलवायु प्रभाव ट्रैक करते हैं — कार्बन उत्सर्जन में कमी, CO₂ बचत और व्यापक पर्यावरणीय लाभों को मापकर रिपोर्ट करते हैं।" },
+      { title: "दीर्घकालिक परियोजनाएं", desc: "दीर्घकालिक और टिकाऊ परियोजनाएं चलाते हैं — एकमुश्त दान नहीं। ऐसी पहलें जो वर्षों तक चलें और स्थानीय समुदाय को वास्तव में सशक्त बनाएं।" },
+    ],
+    stats: [
+      { value: "50+", label: "कवर किए गाँव" },
+      { value: "100%", label: "अनुपालन दर" },
+      { value: "25+", label: "कॉर्पोरेट भागीदार" },
+      { value: "10K+", label: "जीवन प्रभावित" },
+    ],
+    ctaHeading1: "हम ठीक इसी समस्या का",
+    ctaHeading2: "समाधान प्रदान करते हैं",
+    ctaText: "चाहे आपकी कंपनी का ध्यान शिक्षा पर हो, स्वास्थ्य पर, पर्यावरण पर, या ग्रामीण विकास पर — हम आपके CSR धन को अधिकतम सामाजिक प्रभाव में बदलने के लिए तैयार हैं।",
+    checklist: [
+      "जमीनी स्तर पर परियोजनाएं क्रियान्वित कर सकें",
+      "गाँवों और ग्रामीण क्षेत्रों में सीधे काम कर सकें",
+      "उचित अनुपालन रिपोर्टिंग दे सकें",
+      "वास्तविक जलवायु और सामाजिक प्रभाव माप सकें",
+      "दीर्घकालिक टिकाऊ परियोजनाएं चला सकें",
+    ],
+    cta: "आज साझेदारी करें →",
+  },
+}
+
+const closingContent = {
+  en: {
+    quote: '"Restoring nature is not just an environmental mission — it is the greatest sustainable economic opportunity of the future."',
+    heading: "Let's Build The Future Together",
+    cta1: "Partner With Us",
+    cta2: "Become an Investor",
+  },
+  hi: {
+    quote: '"प्रकृति को पुनर्स्थापित करना केवल एक पर्यावरणीय मिशन नहीं है — यह भविष्य का सबसे बड़ा सतत आर्थिक अवसर है।"',
+    heading: "आइए मिलकर भविष्य बनाएं",
+    cta1: "हमारे साथ जुड़ें",
+    cta2: "निवेशक बनें",
+  },
+}
+
 const heroContent = {
   en: {
     eyebrow: "CSR Concept",
@@ -206,6 +300,8 @@ export default function CsrConceptPage({ language = "en" }) {
   const h1 = heroContent[language] ?? heroContent.en
   const p2 = problemsContent[language] ?? problemsContent.en
   const g9 = goalsContent[language] ?? goalsContent.en
+  const c10 = closingContent[language] ?? closingContent.en
+  const w5 = whyContent[language] ?? whyContent.en
   const goalsData = g9.goals.map((g, i) => ({ ...SHARED[i], ...g }))
 
   return (
@@ -276,151 +372,7 @@ export default function CsrConceptPage({ language = "en" }) {
 
       </section>
 
-      {/* SECTION 3 — Opportunity */}
-      <section className="csr-section csr-opportunity-section">
-        <div className="csr-shell csr-shell-narrow">
-          <p className="csr-eyebrow">Opportunity</p>
-          <h2 className="csr-section-heading">Jahan Crisis Hota Hai, Wahin Future Opportunity Bhi Hoti Hai</h2>
-          <p className="csr-section-lead">पूरी दुनिया अब focus कर रही है:</p>
-          <ul className="csr-opportunity-list">
-            {["Sustainability", "Carbon Reduction", "Climate Action", "Regenerative Agriculture", "Ecosystem Restoration"].map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <p className="csr-opportunity-para">
-            Companies aur Governments अब ऐसे organizations खोज रहे हैं जो ground level par real impact create kar saken।
-            <strong> Yahi hamara opportunity zone hai।</strong>
-          </p>
-        </div>
-      </section>
-
-      {/* SECTION 4 — What We Are Building */}
-      <section className="csr-section csr-building-section" id="vision">
-        <div className="csr-shell">
-          <p className="csr-eyebrow dark">What We Are Building</p>
-          <h2 className="csr-section-heading">Hum Kya Build Kar Rahe Hain?</h2>
-          <p className="csr-section-lead">Hum ek integrated rural climate ecosystem build kar rahe hain jo multiple areas ko connect karta hai।</p>
-          <div className="csr-ecosystem-grid">
-            {ecosystems.map((eco) => (
-              <div className="csr-ecosystem-card" key={eco.title}>
-                <div className="csr-ecosystem-header">
-                  <span className="csr-card-icon">{eco.icon}</span>
-                  <h3>{eco.title}</h3>
-                </div>
-                <div className="csr-ecosystem-body">
-                  <div className="csr-ecosystem-col">
-                    <h4>Hum Kya Karenge?</h4>
-                    <ul>
-                      {eco.doing.map((d) => <li key={d}>{d}</li>)}
-                    </ul>
-                  </div>
-                  <div className="csr-ecosystem-col csr-ecosystem-col--result">
-                    <h4>Isse Kya Hoga?</h4>
-                    <ul>
-                      {eco.result.map((r) => <li key={r}>{r}</li>)}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 5 — Why Companies */}
-      <section className="csr-section csr-why-section" id="partner">
-        <div className="csr-shell csr-shell-narrow">
-          <p className="csr-eyebrow">Why Us</p>
-          <h2 className="csr-section-heading">Companies Ko Hamari Zarurat Kyun Hogi?</h2>
-          <p className="csr-section-lead">India mein बड़ी Companies ko legally CSR spending karna padta hai। Unhe aise implementation partners chahiye jo:</p>
-          <ul className="csr-why-list">
-            {[
-              "Ground execution kar saken",
-              "Villages mein kaam kar saken",
-              "Proper reporting de saken",
-              "Climate impact measure kar saken",
-              "Sustainable projects execute kar saken",
-            ].map((item) => (
-              <li key={item}>
-                <span className="csr-check">✓</span>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="csr-highlight-text">Hum exactly isi problem ka solution provide karenge।</p>
-        </div>
-      </section>
-
-      {/* SECTION 6 — Revenue Model */}
-      <section className="csr-section csr-revenue-section">
-        <div className="csr-shell">
-          <p className="csr-eyebrow dark">Revenue Model</p>
-          <h2 className="csr-section-heading">Hum Revenue Kaise Generate Karenge?</h2>
-          <div className="csr-revenue-grid">
-            {revenues.map((r) => (
-              <div className="csr-revenue-card" key={r.num}>
-                <span className="csr-revenue-num">{r.num}</span>
-                <h3>{r.title}</h3>
-                <p>{r.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 7 — Section 8 Company */}
-      <section className="csr-section csr-sec8-section">
-        <div className="csr-shell csr-shell-narrow">
-          <p className="csr-eyebrow">Legal Structure</p>
-          <h2 className="csr-section-heading">Section 8 Company Kyun?</h2>
-          <div className="csr-sec8-box">
-            <p>Section 8 Company ek legally recognized non-profit structure hota hai jo:</p>
-            <ul className="csr-sec8-list">
-              {[
-                "CSR funding receive kar sakta hai",
-                "Companies ke saath officially kaam kar sakta hai",
-                "Grants aur partnerships le sakta hai",
-                "Large-scale impact projects run kar sakta hai",
-              ].map((item) => (
-                <li key={item}>
-                  <span className="csr-check">✓</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <p className="csr-sec8-footer">Yeh trust aur credibility build karta hai।</p>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 8 — Long-Term Vision */}
-      <section className="csr-section csr-vision-section">
-        <div className="csr-shell csr-shell-narrow">
-          <p className="csr-eyebrow">Long-Term Vision</p>
-          <h2 className="csr-section-heading">Hamari Long-Term Vision</h2>
-          <p className="csr-section-lead">Hum sirf plantation ya farming project nahi banana chahte। Hum ek</p>
-          <div className="csr-vision-banner">
-            <span>"Climate Positive Rural Ecosystem"</span>
-          </div>
-          <p className="csr-section-lead">build karna chahte hain। Jahan:</p>
-          <div className="csr-vision-grid">
-            {[
-              { icon: "🌱", label: "Healthy Soil ho" },
-              { icon: "💧", label: "Clean Water ho" },
-              { icon: "🏡", label: "Sustainable Villages ho" },
-              { icon: "🌳", label: "Biodiversity ho" },
-              { icon: "👨‍🌾", label: "Financially Strong Farmers ho" },
-            ].map((v) => (
-              <div className="csr-vision-item" key={v.label}>
-                <span>{v.icon}</span>
-                <p>{v.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 9 — Goals */}
+       {/* SECTION 3 — Goals */}
       <section className="py-20 bg-[linear-gradient(135deg,#0a1628_0%,#1a2f4a_50%,#0d3d2e_100%)]">
         <div className="max-w-[1400px] mx-auto px-5">
 
@@ -506,40 +458,117 @@ export default function CsrConceptPage({ language = "en" }) {
               )
             })}
           </div>
+          </div>
+      </section>
 
-          {/* Impact Summary */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-5 mt-16 p-8 rounded-3xl bg-green-500/10 border border-green-500/20 backdrop-blur-sm">
-            {g9.stats.map(s => (
-              <div key={s.label} className="text-center p-4">
-                <div
-                  className="text-[2rem] font-extrabold mb-2"
-                  style={{ background: "linear-gradient(135deg,#22c55e,#6ee7b7)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
-                >{s.value}</div>
-                <p className="text-white/70 text-sm">{s.label}</p>
+      {/* SECTION 5 — Why Companies */}
+      <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-[#f0fdf4] via-[#ecfeff] to-[#f0fdf4]" id="partner">
+
+        {/* Decorative blobs */}
+        <div className="absolute w-96 h-96 rounded-full bg-emerald-300/40 blur-[80px] -top-20 -left-20 pointer-events-none" />
+        <div className="absolute w-80 h-80 rounded-full bg-cyan-300/40 blur-[80px] bottom-0 right-0 pointer-events-none" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Header */}
+          <div className="text-center max-w-4xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse inline-block" />
+              {w5.badge}
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#1a1a1a] mb-6 leading-tight">
+              {w5.heading1}<br />
+              <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">{w5.heading2}</span>
+            </h2>
+            <p className="text-lg text-[#555] leading-relaxed">{w5.subtitle}</p>
+          </div>
+
+          {/* Challenge box */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-lg border border-emerald-100">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4 flex items-center gap-3">
+                <span className="text-[#e67e22] text-2xl">⚠</span>
+                {w5.challengeTitle}
+              </h3>
+              <p className="text-[#555] text-lg leading-relaxed">{w5.challengeText}</p>
+            </div>
+          </div>
+
+          {/* Cards heading */}
+          <div className="text-center mb-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-2">{w5.cardsHeading}</h3>
+            <p className="text-[#555]">{w5.cardsSub}</p>
+          </div>
+
+          {/* 5 Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {w5.cards.map((card, i) => (
+              <div
+                key={i}
+                className={`bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:-translate-y-2 hover:shadow-[0_25px_50px_-12px_rgba(16,185,129,0.25)] transition-all duration-300${i === 4 ? " md:col-span-2 lg:col-span-1" : ""}`}
+              >
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-3xl bg-gradient-to-br ${WHY_CARDS[i].gradient} shadow-lg`}>
+                  {WHY_CARDS[i].icon}
+                </div>
+                <h4 className="text-xl font-bold text-[#1a1a1a] mb-3">{card.title}</h4>
+                <p className="text-[#555] leading-relaxed">{card.desc}</p>
               </div>
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="text-center mt-10 pb-6">
-            <button className="inline-flex items-center gap-3 px-10 py-4 rounded-full font-semibold text-base text-white bg-gradient-to-r from-green-500 to-green-700 transition-all duration-300 hover:-translate-y-1 shadow-[0_10px_30px_rgba(34,197,94,0.3)] hover:shadow-[0_15px_40px_rgba(34,197,94,0.4)]">
-              📥 {g9.cta}
-            </button>
+          {/* Stats */}
+          <div className="mb-16">
+            <div className="bg-gradient-to-r from-emerald-700 to-teal-700 rounded-3xl p-8 md:p-12 shadow-2xl text-white">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                {w5.stats.map((s, i) => (
+                  <div key={i}>
+                    <div className="text-4xl md:text-5xl font-extrabold mb-2">{s.value}</div>
+                    <div className="text-emerald-100 text-sm md:text-base">{s.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* CTA box */}
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white rounded-3xl p-10 md:p-14 shadow-xl border-2 border-emerald-100 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -mr-16 -mt-16 opacity-50 pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-cyan-100 rounded-full -ml-12 -mb-12 opacity-50 pointer-events-none" />
+              <div className="relative z-10">
+                <h3 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-6">
+                  {w5.ctaHeading1}<br />
+                  <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">{w5.ctaHeading2}</span>
+                </h3>
+                <p className="text-lg text-[#555] mb-8 max-w-2xl mx-auto leading-relaxed">{w5.ctaText}</p>
+                <ul className="text-left max-w-md mx-auto mb-8 space-y-3 text-[#374151]">
+                  {w5.checklist.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-emerald-600 font-bold text-xl shrink-0">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#partner" className="primary-btn">{w5.cta}</a>
+              </div>
+            </div>
           </div>
 
         </div>
       </section>
+     
 
       {/* SECTION 10 — Closing */}
-      <section className="csr-closing-section">
-        <div className="csr-shell csr-shell-narrow">
-          <blockquote className="csr-quote">
-            "Nature ko restore karna sirf environmental mission nahi, future ka sabse bada sustainable economic opportunity hai।"
-          </blockquote>
-          <h2 className="csr-closing-heading">Let's Build The Future Together</h2>
+      <section
+        className="csr-closing-section"
+        style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(${csrBackground})` }}
+      >
+        <div className="csr-closing-content">
+          <blockquote className="csr-quote">{c10.quote}</blockquote>
+          <h2 className="csr-closing-heading">{c10.heading}</h2>
           <div className="csr-hero-actions">
-            <a href="#partner" className="primary-btn">Partner With Us</a>
-            <Link to="/investor/model-1" className="secondary-btn">Become an Investor</Link>
+            <a href="#partner" className="primary-btn">{c10.cta1}</a>
+            <Link to="/investor/model-1" className="csr-outline-btn">{c10.cta2}</Link>
           </div>
         </div>
       </section>
