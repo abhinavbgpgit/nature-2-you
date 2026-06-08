@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"c:/Users/DELL/Desktop/natural farming/src/assets/\" /b)",
+      "Bash(dir \"c:/Users/DELL/Desktop/natural farming/src/assets/csr_problems/\")"
+    ]
+  }
+}

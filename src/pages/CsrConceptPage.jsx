@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom"
 import csrBackground from "../assets/csr_background.png"
+import imgClimateChange from "../assets/csr_problems/climate_change.png"
+import imgWaterCrisis from "../assets/csr_problems/water_crisis.png"
+import imgSoilDegradation from "../assets/csr_problems/soil_degradation.png"
+import imgFarmerDistress from "../assets/csr_problems/farmer_distress.png"
+import imgLossBiodiversity from "../assets/csr_problems/loss_of_biodiversity.png"
 import img10LakhTree from "../assets/next_5_years/10_lakh_tree.png"
 import imgFarmersTraining from "../assets/next_5_years/Farmers Training.png"
 import imgWaterStructures from "../assets/next_5_years/Water_Structures.png"
@@ -13,34 +18,34 @@ const problemsContent = {
     intro: "India and the world are facing a severe environmental and ecological crisis that goes far beyond nature — it directly impacts our health, agriculture, water security, economy, and the future of generations to come.",
     cards: [
       {
-        icon: "🌍", title: "Climate Change — Rising Temperatures & Extreme Weather",
+        icon: "🌍", title: "Climate Change",
         summary: "Climate change is one of the most pressing challenges facing the world today. Global temperatures are rising steadily, triggering extreme weather events such as heat waves, droughts, floods, and unpredictable rainfall patterns that devastate ecosystems and communities.",
         impacts: ["Record-breaking heat waves", "Unpredictable rainfall patterns", "Frequent floods & droughts", "Declining crop production", "Heat stress & health crises", "Forest fires & ecosystem damage"],
-        imgUrl: "https://picsum.photos/seed/climatechange/800/500", imgAlt: "Climate Change",
+        imgUrl: imgClimateChange, imgAlt: "Climate Change",
       },
       {
-        icon: "💧", title: "Water Crisis — Rapid Depletion of Water Resources",
+        icon: "💧", title: "Water Crisis",
         summary: "Groundwater is India's most critical hidden resource, but overuse and poor water management are causing it to deplete at an alarming rate. Borewells are going deeper, traditional ponds are disappearing, and millions of people face growing water insecurity every year.",
         impacts: ["Falling groundwater levels", "Rivers & ponds drying up", "Inadequate rainwater harvesting", "Excessive agricultural water use", "Drinking water shortages", "Long-term water insecurity"],
-        imgUrl: "https://picsum.photos/seed/watercrisis/800/500", imgAlt: "Water Crisis",
+        imgUrl: imgWaterCrisis, imgAlt: "Water Crisis",
       },
       {
-        icon: "🌱", title: "Soil Degradation — Collapse of Soil Fertility",
+        icon: "🌱", title: "Soil Degradation",
         summary: "Modern chemical farming has boosted short-term yields but caused severe long-term damage to soil health. Excessive use of chemical fertilisers and pesticides has gradually destroyed the natural microorganisms and organic carbon that make soil productive and resilient.",
         impacts: ["Loss of organic carbon", "Declining soil fertility", "Poor water retention capacity", "Loss of earthworms & microbes", "Rising crop diseases & pests", "Long-term agricultural risk"],
-        imgUrl: "https://picsum.photos/seed/soildamage/800/500", imgAlt: "Soil Degradation",
+        imgUrl: imgSoilDegradation, imgAlt: "Soil Degradation",
       },
       {
-        icon: "👨‍🌾", title: "Farmer Distress — Rising Costs, Stagnant Income",
+        icon: "👨‍🌾", title: "Farmer Distress",
         summary: "India's farmers are caught in a deepening crisis. Input costs — fertilisers, seeds, diesel, and labour — keep rising while crop prices and farm income remain unpredictable. The financial pressure is forcing many farmers into debt and pushing the next generation away from agriculture.",
         impacts: ["Rising input costs", "High crop failure risk", "Unstable market prices", "Debt & financial burden", "Water scarcity for irrigation", "Youth abandoning farming"],
-        imgUrl: "https://picsum.photos/seed/farmerdistress/800/500", imgAlt: "Farmer Distress",
+        imgUrl: imgFarmerDistress, imgAlt: "Farmer Distress",
       },
       {
-        icon: "🌳", title: "Loss of Biodiversity — Nature's Balance Disrupted",
+        icon: "🌳", title: "Loss of Biodiversity",
         summary: "Rapid urbanisation, deforestation, and monoculture farming are accelerating the loss of biodiversity at an unprecedented scale. Trees are being cleared, birds and pollinators are vanishing, and natural ecosystems that took centuries to develop are being destroyed within decades.",
         impacts: ["Shrinking forest cover", "Wildlife habitat destruction", "Decline of bees & butterflies", "Disrupted food chains", "Local climate imbalance", "Increased ecological vulnerability"],
-        imgUrl: "https://picsum.photos/seed/biodiversityloss/800/500", imgAlt: "Loss of Biodiversity",
+        imgUrl: imgLossBiodiversity, imgAlt: "Loss of Biodiversity",
       },
     ],
   },
@@ -50,34 +55,34 @@ const problemsContent = {
     intro: "भारत और पूरी दुनिया एक ऐसे पर्यावरणीय और पारिस्थितिक संकट का सामना कर रही है जो सिर्फ प्रकृति तक सीमित नहीं है — इसका सीधा असर हमारे स्वास्थ्य, खेती, पानी, अर्थव्यवस्था और भावी पीढ़ियों पर पड़ रहा है।",
     cards: [
       {
-        icon: "🌍", title: "जलवायु परिवर्तन — बदलता मौसम और अत्यधिक गर्मी",
+        icon: "🌍", title: "जलवायु परिवर्तन",
         summary: "जलवायु परिवर्तन आज दुनिया की सबसे बड़ी चुनौतियों में से एक है। वैश्विक तापमान लगातार बढ़ रहा है, जिसके कारण हीट वेव्स, सूखा, बाढ़ और अनियमित वर्षा जैसी चरम मौसमी घटनाएं तेजी से बढ़ रही हैं।",
         impacts: ["रिकॉर्ड तोड़ गर्मी", "अनिश्चित वर्षा पैटर्न", "बाढ़ और सूखे की बारंबारता", "फसल उत्पादन में गिरावट", "गर्मी से स्वास्थ्य समस्याएं", "जंगल की आग और नुकसान"],
-        imgUrl: "https://picsum.photos/seed/climatechange/800/500", imgAlt: "जलवायु परिवर्तन",
+        imgUrl: imgClimateChange, imgAlt: "जलवायु परिवर्तन",
       },
       {
-        icon: "💧", title: "जल संकट — पानी का तेजी से खत्म होना",
+        icon: "💧", title: "जल संकट",
         summary: "भूजल भारत का सबसे बड़ा छुपा हुआ संसाधन है, लेकिन अत्यधिक उपयोग और खराब जल प्रबंधन की वजह से यह तेजी से नीचे जा रहा है। बोरवेल गहरे होते जा रहे हैं, तालाब और पारंपरिक जल स्रोत गायब हो रहे हैं।",
         impacts: ["भूजल स्तर गिर रहा है", "नदियां और तालाब सूख रहे हैं", "वर्षा जल का अपर्याप्त संचयन", "खेती में अत्यधिक पानी का उपयोग", "पेयजल की कमी", "भविष्य में जल असुरक्षा"],
-        imgUrl: "https://picsum.photos/seed/watercrisis/800/500", imgAlt: "जल संकट",
+        imgUrl: imgWaterCrisis, imgAlt: "जल संकट",
       },
       {
-        icon: "🌱", title: "मिट्टी की क्षति — उर्वरता का खात्मा",
+        icon: "🌱", title: "मिट्टी की क्षति",
         summary: "आधुनिक रासायनिक खेती ने अल्पकालिक उत्पादन तो बढ़ाया, लेकिन दीर्घकालिक रूप से मिट्टी के स्वास्थ्य को बहुत नुकसान पहुंचाया है। अत्यधिक रासायनिक उर्वरकों और कीटनाशकों की वजह से मिट्टी के प्राकृतिक सूक्ष्मजीव और जैविक कार्बन धीरे-धीरे खत्म हो रहे हैं।",
         impacts: ["जैविक कार्बन में कमी", "मिट्टी की उर्वरता घट रही है", "जल धारण क्षमता कमजोर", "केंचुए और सूक्ष्मजीवों की कमी", "अधिक फसल रोग", "दीर्घकालिक खेती का खतरा"],
-        imgUrl: "https://picsum.photos/seed/soildamage/800/500", imgAlt: "मिट्टी की क्षति",
+        imgUrl: imgSoilDegradation, imgAlt: "मिट्टी की क्षति",
       },
       {
-        icon: "👨‍🌾", title: "किसान संकट — बढ़ते खर्च, स्थिर आय नहीं",
+        icon: "👨‍🌾", title: "किसान संकट",
         summary: "भारत का किसान आज कई दबावों का सामना कर रहा है। एक तरफ उर्वरक, बीज, डीजल और मजदूरी की लागत लगातार बढ़ रही है, दूसरी तरफ फसल की कीमतें और किसान की आय उतनी तेजी से नहीं बढ़ रही।",
         impacts: ["बढ़ती इनपुट लागत", "फसल नष्ट होने का जोखिम", "बाजार मूल्य अस्थिरता", "कर्ज और आर्थिक दबाव", "पानी की उपलब्धता की समस्या", "युवा खेती छोड़ रहे हैं"],
-        imgUrl: "https://picsum.photos/seed/farmerdistress/800/500", imgAlt: "किसान संकट",
+        imgUrl: imgFarmerDistress, imgAlt: "किसान संकट",
       },
       {
-        icon: "🌳", title: "जैव विविधता का नुकसान — प्रकृति का संतुलन बिगड़ना",
+        icon: "🌳", title: "जैव विविधता का नुकसान",
         summary: "तेज शहरीकरण, वनों की कटाई और मोनोकल्चर खेती की वजह से जैव विविधता तेजी से कम हो रही है। पेड़ काटे जा रहे हैं, पक्षी और परागणकर्ता गायब हो रहे हैं, और प्राकृतिक पारिस्थितिकी तंत्र नष्ट होते जा रहे हैं।",
         impacts: ["वन क्षेत्र में कमी", "वन्यजीव आवास नष्ट", "मधुमक्खियों और तितलियों में कमी", "खाद्य श्रृंखला असंतुलित", "स्थानीय जलवायु असंतुलन", "बढ़ती संवेदनशीलता"],
-        imgUrl: "https://picsum.photos/seed/biodiversityloss/800/500", imgAlt: "जैव विविधता का नुकसान",
+        imgUrl: imgLossBiodiversity, imgAlt: "जैव विविधता का नुकसान",
       },
     ],
   },
@@ -170,7 +175,35 @@ const goalsContent = {
   },
 }
 
+const heroContent = {
+  en: {
+    eyebrow: "CSR Concept",
+    heading: "Building India's Natural & Climate-Resilient Future",
+    sub: "We are building a scalable, climate-focused ecosystem through Natural Farming, Water Conservation, Tree Plantation, and Rural Ecosystem Development.",
+    bullets: [
+      "Restore Nature",
+      "Empower Farmers",
+      "Build Sustainable Villages",
+      "Generate long-term revenue through CSR & Climate Funding",
+    ],
+    cta1: "Explore Vision", cta2: "Partner With Us", cta3: "Become an Investor",
+  },
+  hi: {
+    eyebrow: "CSR अवधारणा",
+    heading: "भारत का प्राकृतिक और जलवायु-अनुकूल भविष्य बनाना",
+    sub: "हम प्राकृतिक खेती, जल संरक्षण, वृक्षारोपण और ग्रामीण पारिस्थितिकी तंत्र विकास के माध्यम से एक स्केलेबल, जलवायु-केंद्रित पारिस्थितिकी तंत्र बना रहे हैं।",
+    bullets: [
+      "प्रकृति को पुनर्स्थापित करें",
+      "किसानों को सशक्त बनाएं",
+      "टिकाऊ गांव बनाएं",
+      "CSR और जलवायु फंडिंग के माध्यम से दीर्घकालिक राजस्व उत्पन्न करें",
+    ],
+    cta1: "विजन देखें", cta2: "साझेदारी करें", cta3: "निवेशक बनें",
+  },
+}
+
 export default function CsrConceptPage({ language = "en" }) {
+  const h1 = heroContent[language] ?? heroContent.en
   const p2 = problemsContent[language] ?? problemsContent.en
   const g9 = goalsContent[language] ?? goalsContent.en
   const goalsData = g9.goals.map((g, i) => ({ ...SHARED[i], ...g }))
@@ -181,21 +214,16 @@ export default function CsrConceptPage({ language = "en" }) {
       {/* SECTION 1 — Hero */}
       <section className="csr-hero" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(${csrBackground})`, backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="csr-hero-inner">
-          <p className="csr-eyebrow">CSR Concept</p>
-          <h1 className="csr-hero-heading">Building India's Natural &amp; Climate-Resilient Future</h1>
-          <p className="csr-hero-sub">
-            Hum Natural Farming, Water Conservation, Tree Plantation aur Rural Ecosystem Development ke through ek scalable climate-focused ecosystem build kar rahe hain।
-          </p>
+          <p className="csr-eyebrow">{h1.eyebrow}</p>
+          <h1 className="csr-hero-heading">{h1.heading}</h1>
+          <p className="csr-hero-sub">{h1.sub}</p>
           <ul className="csr-hero-bullets">
-            <li>Nature restore ho</li>
-            <li>Farmers empower ho</li>
-            <li>Villages sustainable bane</li>
-            <li>Aur CSR &amp; Climate Funding ke through long-term revenue generate ho</li>
+            {h1.bullets.map((b, i) => <li key={i}>{b}</li>)}
           </ul>
           <div className="csr-hero-actions">
-            <a href="#vision" className="primary-btn">Explore Vision</a>
-            <a href="#partner" className="secondary-btn">Partner With Us</a>
-            <Link to="/investor/model-1" className="csr-outline-btn">Become an Investor</Link>
+            <a href="#vision" className="primary-btn">{h1.cta1}</a>
+            <a href="#partner" className="secondary-btn">{h1.cta2}</a>
+            <Link to="/investor/model-1" className="csr-outline-btn">{h1.cta3}</Link>
           </div>
         </div>
       </section>
@@ -214,7 +242,7 @@ export default function CsrConceptPage({ language = "en" }) {
         {p2.cards.map((card, i) => {
           const isEven = i % 2 !== 0
           return (
-            <div key={i} className={isEven ? "bg-[#f9fafb]" : "bg-white"}>
+            <div key={i} className={isEven ? "bg-[#e8ecf1]" : "bg-white"}>
               <div className={`flex items-center max-w-[1200px] mx-auto px-6 py-10 gap-10 flex-col sm:flex-row ${isEven ? "sm:flex-row-reverse" : ""}`}>
 
                 {/* Image */}
@@ -229,7 +257,7 @@ export default function CsrConceptPage({ language = "en" }) {
                 {/* Content */}
                 <div className="flex-1 py-2">
                   <h3 className="text-[1.6rem] font-bold text-[#1e293b] mb-1">{card.icon} {card.title}</h3>
-                  <div className="w-[60px] h-[3px] bg-[#e67e22] rounded mb-5" />
+                  <div className="w-full h-[3px] bg-[#e67e22] rounded mb-5" />
                   <p className="text-[1rem] text-[#4b5563] mb-5 leading-relaxed">{card.summary}</p>
                   <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
                     {card.impacts.map((item, j) => (
