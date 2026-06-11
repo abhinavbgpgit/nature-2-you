@@ -1,12 +1,11 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
-import biodiversityImage from "../assets/Biodiversity.png"
-import buildSoilFertilityImage from "../assets/build_soil_fertility.png"
-import doNotHarmImage from "../assets/do_not_harm.png"
-import naturalCyclesImage from "../assets/Natural_Cycles.png"
-import outsideInputsImage from "../assets/outside_inputs.png"
-import heroBackground from "../assets/hero_bg.png"
+import biodiversityImage from "../../assets/Biodiversity.png"
+import buildSoilFertilityImage from "../../assets/build_soil_fertility.png"
+import doNotHarmImage from "../../assets/do_not_harm.png"
+import naturalCyclesImage from "../../assets/Natural_Cycles.png"
+import outsideInputsImage from "../../assets/outside_inputs.png"
 import { homeContent } from "./homeContent"
+import Hero from "./Hero"
 
 export default function HomePage({ language }) {
   const { hero, principles } = homeContent[language] ?? homeContent.en
@@ -20,26 +19,7 @@ export default function HomePage({ language }) {
 
   return (
     <>
-      <section
-        className="home-hero"
-        style={{
-          backgroundImage: `linear-gradient(90deg, rgba(17,44,25,0.92), rgba(17,44,25,0.52), rgba(17,44,25,0.12)), url("${heroBackground}")`,
-        }}
-      >
-        <div className="home-copy">
-          <p className="hero-badge">{hero.badge}</p>
-          <h1>{hero.title}</h1>
-          <p>{hero.text}</p>
-          <div className="hero-actions">
-            <Link className="primary-btn" to="/natural-farming">
-              {hero.learn}
-            </Link>
-            <Link className="secondary-btn" to="/farming-model">
-              {hero.explore}
-            </Link>
-          </div>
-        </div>
-      </section>
+      <Hero hero={hero} />
       <section className="principles-showcase" aria-labelledby="principles-title">
         <div className="principles-shell">
           <header className="principles-intro">
@@ -96,7 +76,7 @@ export default function HomePage({ language }) {
                       </strong>
                       <span>{item.summary}</span>
                     </span>
-                    <span className="principle-action" aria-hidden="true">{isOpen ? "\u2212" : "+"}</span>
+                    <span className="principle-action" aria-hidden="true">{isOpen ? "−" : "+"}</span>
                   </button>
                   {isOpen && (
                     <div className="principle-body" id={panelId}>

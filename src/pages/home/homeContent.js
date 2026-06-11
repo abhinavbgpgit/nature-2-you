@@ -124,7 +124,7 @@ export const homeContent = {
           number: "05",
           title: "Minimize Outside Inputs",
           summary:
-            "Natural farming aims to help farmers obtain most of their farming resources directly from their own fields. Based on this vision of self-reliance and sustainability, we have named it ‘Atmanirbhar Kheti’ (Self-Reliant Farming)",
+            "Natural farming aims to help farmers obtain most of their farming resources directly from their own fields. Based on this vision of self-reliance and sustainability, we have named it 'Atmanirbhar Kheti' (Self-Reliant Farming)",
           groups: [
             {
               title: "Ways to reduce inputs",
@@ -274,7 +274,7 @@ export const homeContent = {
           number: "05",
           title: "बाहरी इनपुट न्यूनतम करना",
           summary:
-            "प्राकृतिक खेती का लक्ष्य है कि किसान अपनी खेती के लिए अधिकतर संसाधन खेत से ही प्राप्त करे। इसी सोच और आत्मनिर्भरता के सिद्धांत पर आधारित होकर हमने इसका नाम ‘**आत्मनिर्भर खेती**’ रखा है।",
+            "प्राकृतिक खेती का लक्ष्य है कि किसान अपनी खेती के लिए अधिकतर संसाधन खेत से ही प्राप्त करे। इसी सोच और आत्मनिर्भरता के सिद्धांत पर आधारित होकर हमने इसका नाम '**आत्मनिर्भर खेती**' रखा है।",
           groups: [
             {
               title: "बाहरी इनपुट कम करने के तरीके",

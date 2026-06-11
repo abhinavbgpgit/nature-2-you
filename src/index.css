@@ -923,63 +923,6 @@ a {
   font-weight: 800;
 }
 
-.home-hero {
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  background-position: center;
-  background-size: cover;
-  padding: 74px 20px 20px;
-}
-
-.home-copy {
-  max-width: 1000px;
-  color: #ffffff;
-}
-
-.hero-badge {
-  display: inline-flex;
-  margin: 0 0 22px;
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px 16px;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.home-copy h1 {
-  margin: 0;
-  max-width: 1000px;
-  font-size: clamp(2.9rem, 7vw, 6.5rem);
-  font-weight: 900;
-  line-height: 0.96;
-}
-
-.home-copy > p:not(.hero-badge) {
-  max-width: 700px;
-  margin: 25px 0 0;
-  color: #e2f1df;
-  font-size: clamp(1.06rem, 1.6vw, 1.25rem);
-  line-height: 1.7;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 32px;
-}
-
-@media (min-width: 1024px) {
-  .home-hero {
-    padding-right: 40px;
-    padding-bottom: 78px;
-    padding-left: 40px;
-  }
-}
 
 .principles-showcase {
   padding: clamp(68px, 9vw, 106px) 20px;
@@ -1389,7 +1332,7 @@ a {
   min-height: 100vh;
   align-items: center;
   background:
-    linear-gradient(90deg, rgba(16, 40, 26, 0.93), rgba(16, 40, 26, 0.38)),
+    linear-gradient(190deg, rgba(0, 0, 0, 0.93), rgba(255, 255, 255, 0.38)),
     var(--hero-image) center/cover;
   padding: 74px 20px 20px;
 }
