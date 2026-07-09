@@ -1,14 +1,15 @@
 import { useEffect, useRef, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-import farm2homeLogo from "../assets/farm2home_logo.png"
+import farm2homeLogo from "../assets/nature_for_you_logo.png"
 
 const headerCopy = {
   en: {
-    name: "Farm2Home",
+    name: "Nature For You",
     sub: "Natural Farming Movement",
     join: "Join Movement",
     nav: [
       ["Home", "/"],
+      ["Natural Farming", "/natural-farming"],
       ["Farming Model", "/farming-model"],
       ["Videos", "/videos"],
       ["Blog", "/blog"],
@@ -24,11 +25,12 @@ const headerCopy = {
     },
   },
   hi: {
-    name: "फार्म2होम",
+    name: "प्रकृति आप के लिए ",
     sub: "प्राकृतिक खेती आंदोलन",
     join: "आंदोलन से जुड़ें",
     nav: [
       ["होम", "/"],
+      ["प्राकृतिक खेती", "/natural-farming"],
       ["खेती मॉडल", "/farming-model"],
       ["वीडियो", "/videos"],
       ["ब्लॉग", "/blog"],
@@ -120,7 +122,6 @@ export default function Header({ language, setLanguage }) {
           >
             {home[0]}
           </NavLink>
-          <InvestorDropdown investor={content.investor} />
           {rest.map(([label, to]) => (
             <NavLink
               to={to}
@@ -130,6 +131,7 @@ export default function Header({ language, setLanguage }) {
               {label}
             </NavLink>
           ))}
+          <InvestorDropdown investor={content.investor} />
         </nav>
         <div className="header-actions">
           <button

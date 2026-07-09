@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
 import { data, pick } from "./pageData"
 import { PageHero, SectionIntro } from "./pageShared"
+import { faqQuestions } from "./naturalFarmingFaqData"
 
 export default function NaturalFarmingPage({ language }) {
   const hi = language === "hi"
@@ -7,10 +9,10 @@ export default function NaturalFarmingPage({ language }) {
     <>
       <PageHero
         eyebrow={hi ? "प्राकृतिक खेती" : "Natural farming"}
-        title={hi ? "मिट्टी को फिर से जीवित बनाना।" : "Bringing the soil back to life."}
+        title={hi ? "प्राकृतिक खेती क्या है ?" : "Bringing the soil back to life."}
         text={
           hi
-            ? "कम खर्च में खेती का ऐसा तरीका जो मिट्टी, पानी और परिवार की सेहत को केंद्र में रखता है।"
+            ? "नीचे स्क्रॉल करें और देखें ।"
             : "A low-input way of farming that puts soil, water, and family health at the center."
         }
         image="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=2200&q=80"
@@ -56,6 +58,32 @@ export default function NaturalFarmingPage({ language }) {
         <div className="principles-grid">
           {data.principles.map(([en, hindi]) => (
             <div className="principle-pill" key={en}>{pick(language, en, hindi)}</div>
+          ))}
+        </div>
+      </section>
+      <section className="section bg-white faq-teaser">
+        <SectionIntro
+          eyebrow={hi ? "सामान्य प्रश्न" : "Common questions"}
+          title={hi ? "आपके मन में जो सवाल हैं?" : "The questions on your mind?"}
+          text={
+            hi
+              ? "किसी भी सवाल पर क्लिक करें और विस्तार से जवाब पढ़ें।"
+              : "Tap any question to read a detailed answer."
+          }
+        />
+        <div className="faq-teaser-grid">
+          {faqQuestions.map((q) => (
+            <Link
+              className="faq-teaser-card"
+              to={`/natural-farming/faq#${q.id}`}
+              key={q.id}
+            >
+              <span className="faq-teaser-num">{q.num}</span>
+              <h3>{hi ? q.question.hi : q.question.en}</h3>
+              <span className="faq-teaser-cta">
+                {hi ? "जवाब देखें →" : "See answer →"}
+              </span>
+            </Link>
           ))}
         </div>
       </section>
