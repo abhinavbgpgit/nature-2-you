@@ -2443,3 +2443,390 @@ a {
 .hindi-mode .faq-step p {
   font-size: 1.1rem;
 }
+
+/* ---------- Natural farming page (detailed) ---------- */
+.nf-intro {
+  display: grid;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .nf-intro {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+}
+
+.nf-intro .section-heading {
+  margin-bottom: 18px;
+}
+
+.nf-photo {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 10;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #edf6df;
+}
+
+.nf-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nf-photo figcaption {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  max-width: calc(100% - 12px);
+  border-radius: 4px;
+  background: rgba(16, 40, 26, 0.6);
+  padding: 2px 8px;
+  font-size: 0.68rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nf-photo figcaption a {
+  color: #ffffff;
+}
+
+.nf-photo-tall {
+  aspect-ratio: 4 / 5;
+}
+
+.nf-photo-small {
+  aspect-ratio: 4 / 3;
+  margin-bottom: 16px;
+}
+
+.nf-more-text p {
+  max-width: 680px;
+  margin: 0 0 16px;
+  color: #526354;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.nf-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  border: 1px solid rgba(29, 86, 48, 0.3);
+  border-radius: 999px;
+  background: transparent;
+  padding: 8px 18px;
+  color: #1d5630;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.nf-read-more:hover,
+.nf-read-more:focus-visible {
+  background: #1d5630;
+  color: #ffffff;
+}
+
+.nf-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.nf-fact {
+  border-left: 3px solid #d9b66f;
+  background: #f7f2e8;
+  padding: 14px 16px;
+  border-radius: 0 8px 8px 0;
+}
+
+.nf-fact strong {
+  display: block;
+  color: #183022;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nf-fact span {
+  color: #526354;
+  font-size: 0.9rem;
+}
+
+.nf-benefit-card {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 18px 24px;
+}
+
+.nf-benefit-card .nf-photo {
+  margin-bottom: 20px;
+}
+
+.nf-benefit-card .nf-read-more {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.nf-benefit-card > p {
+  margin-bottom: 4px;
+}
+
+.nf-list {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nf-list li {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 22px;
+  color: #526354;
+  line-height: 1.6;
+}
+
+.nf-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6c9d58;
+}
+
+.nf-list-numbered {
+  counter-reset: nf;
+}
+
+.nf-list-numbered li::before {
+  counter-increment: nf;
+  content: counter(nf);
+  top: 0.15em;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: #1d5630;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  line-height: 16px;
+  text-align: center;
+}
+
+.nf-flow {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+@media (min-width: 680px) {
+  .nf-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .nf-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.nf-flow-step {
+  position: relative;
+  border: 1px solid rgba(57, 109, 68, 0.22);
+  border-radius: 8px;
+  background: linear-gradient(145deg, #edf6df, #fffaf1);
+  padding: 16px 18px 22px;
+}
+
+.nf-flow-step h3,
+.nf-principle h3,
+.nf-step h3 {
+  margin: 8px 0;
+  color: #183022;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.nf-flow-step p,
+.nf-principle p,
+.nf-step p {
+  margin: 0;
+  color: #526354;
+  line-height: 1.7;
+}
+
+.nf-principles {
+  display: grid;
+  gap: 18px;
+}
+
+@media (min-width: 900px) {
+  .nf-principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.nf-principle {
+  display: grid;
+  gap: 18px;
+  border: 1px solid rgba(57, 109, 68, 0.18);
+  border-radius: 8px;
+  background: #fffaf1;
+  padding: 18px;
+  box-shadow: 0 18px 50px rgba(24, 48, 34, 0.06);
+}
+
+@media (min-width: 560px) {
+  .nf-principle {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+  }
+
+  .nf-principle-photo {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.nf-principle h3 small {
+  display: inline-block;
+  margin-left: 6px;
+  border-radius: 999px;
+  background: #edf6df;
+  padding: 2px 10px;
+  color: #396d44;
+  font-size: 0.72rem;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.nf-principle-more h4 {
+  margin: 16px 0 4px;
+  color: #183022;
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nf-principle .nf-why {
+  margin-top: 10px;
+  border-left: 3px solid #d9b66f;
+  background: #f7f2e8;
+  padding: 10px 14px;
+  color: #183022;
+  font-weight: 600;
+}
+
+.nf-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(57, 109, 68, 0.18);
+  border-radius: 8px;
+}
+
+.nf-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  background: #fffaf1;
+}
+
+.nf-table th,
+.nf-table td {
+  border-bottom: 1px solid rgba(57, 109, 68, 0.14);
+  padding: 14px 18px;
+  color: #526354;
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nf-table thead th {
+  background: #1d5630;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.nf-table tbody th {
+  color: #183022;
+  font-weight: 800;
+}
+
+.nf-table td.nf-good {
+  background: #edf6df;
+  color: #1d5630;
+  font-weight: 600;
+}
+
+.nf-table tbody tr:last-child th,
+.nf-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.nf-steps {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nf-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  border: 1px solid rgba(57, 109, 68, 0.18);
+  border-radius: 8px;
+  background: #fffaf1;
+  padding: 18px;
+}
+
+.nf-step h3 {
+  margin-top: 4px;
+}
+
+.nf-step .nf-read-more {
+  margin-top: 10px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+}
+
+.nf-step-more {
+  margin-top: 10px !important;
+}
+
+.nf-step-num {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 50%;
+  background: #1d5630;
+  color: #ffffff;
+  font-weight: 900;
+}
