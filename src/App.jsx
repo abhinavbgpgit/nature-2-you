@@ -5,6 +5,10 @@ import Header from "./components/Header"
 import BlogPage from "./pages/BlogPage"
 import CommunityPage from "./pages/CommunityPage"
 import FarmingModelPage from "./pages/FarmingModelPage"
+import ModuleDetailPage from "./pages/farming-modules/ModuleDetailPage"
+import IncubatorPage from "./pages/farming-modules/IncubatorPage"
+import AudiencePage from "./pages/audience/AudiencePage"
+import SchoolCurriculumPage from "./pages/school-curriculum/SchoolCurriculumPage"
 import HomePage from "./pages/home/HomePage"
 import NaturalFarmingPage from "./pages/NaturalFarmingPage"
 import NaturalFarmingFaqPage from "./pages/NaturalFarmingFaqPage"
@@ -23,7 +27,11 @@ function App() {
         <Route path="/natural-farming" element={<NaturalFarmingPage language={language} />} />
         <Route path="/natural-farming/faq" element={<NaturalFarmingFaqPage language={language} />} />
         <Route path="/farming-model" element={<FarmingModelPage language={language} />} />
-        <Route path="/videos" element={<VideosPage language={language} />} />
+        <Route path="/farming-model/jugaad-incubator" element={<IncubatorPage language={language} />} />
+        <Route path="/farming-model/:slug" element={<ModuleDetailPage language={language} />} />
+        <Route path="/for/school-kids" element={<SchoolCurriculumPage language={language} />} />
+        <Route path="/for/:slug" element={<AudiencePage language={language} />} />
+        <Route path="/videos"element={<VideosPage language={language} />} />
         <Route path="/blog" element={<BlogPage language={language} />} />
         <Route path="/research" element={<ResearchPage language={language} />} />
         <Route path="/community" element={<CommunityPage language={language} />} />

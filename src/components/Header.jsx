@@ -47,7 +47,29 @@ const headerCopy = {
   },
 }
 
-function InvestorDropdown({ investor }) {
+// "सबके लिए" menu: one guide page per audience.
+const audienceMenus = {
+  en: {
+    label: "For everyone",
+    heading: "Who is it for?",
+    items: [
+      ["🎒 For school children", "/for/school-kids"],
+      ["👩‍🏫 For teachers", "/for/teachers"],
+      ["🏙️ For city families", "/for/urban-families"],
+    ],
+  },
+  hi: {
+    label: "सबके लिए",
+    heading: "किसके लिए है?",
+    items: [
+      ["🎒 स्कूल के बच्चों के लिए", "/for/school-kids"],
+      ["👩‍🏫 शिक्षकों के लिए", "/for/teachers"],
+      ["🏙️ शहरी परिवारों के लिए", "/for/urban-families"],
+    ],
+  },
+}
+
+function NavDropdown({ menu }) {
   const [open, setOpen] = useState(false)
   const closeTimer = useRef(null)
   const wrapperRef = useRef(null)
@@ -79,12 +101,13 @@ function InvestorDropdown({ investor }) {
       onMouseLeave={handleMouseLeave}
     >
       <span className="nav-link nav-dropdown-trigger">
-        {investor.label}
+        {menu.label}
         <span className={`dropdown-arrow ${open ? "open" : ""}`}>▾</span>
       </span>
       {open && (
         <div className="nav-dropdown">
-          {investor.items.map(([label, to]) => (
+          {menu.heading && <span className="nav-dropdown-heading">{menu.heading}</span>}
+          {menu.items.map(([label, to]) => (
             <NavLink
               to={to}
               className={({ isActive }) => `nav-dropdown-item ${isActive ? "selected" : ""}`}
@@ -131,7 +154,8 @@ export default function Header({ language, setLanguage }) {
               {label}
             </NavLink>
           ))}
-          <InvestorDropdown investor={content.investor} />
+          <NavDropdown menu={audienceMenus[language]} />
+          <NavDropdown menu={content.investor} />
         </nav>
         <div className="header-actions">
           <button
@@ -154,7 +178,7 @@ export default function Header({ language, setLanguage }) {
             {label}
           </NavLink>
         ))}
-        {content.investor.items.map(([label, to]) => (
+        {[...audienceMenus[language].items, ...content.investor.items].map(([label, to]) => (
           <NavLink to={to} key={to}>
             {label}
           </NavLink>

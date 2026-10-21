@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { PageHero } from "./pageShared"
-import { faqHero, faqQuestions, faqSections } from "./naturalFarmingFaqData"
+import { faqHero, faqSections } from "./naturalFarmingFaqData"
 
 function Block({ block, lang }) {
   switch (block.type) {
@@ -108,10 +108,10 @@ export default function NaturalFarmingFaqPage({ language }) {
           <Link to="/natural-farming" className="faq-toc-back">
             {hi ? "← प्राकृतिक खेती पर वापस" : "← Back to Natural farming"}
           </Link>
-          {faqQuestions.map((q) => (
-            <a className="faq-toc-item" href={`#${q.id}`} key={q.id}>
-              <span className="faq-toc-num">{q.num}</span>
-              <span>{q.question[lang]}</span>
+          {faqSections.map((s) => (
+            <a className="faq-toc-item" href={`#${s.id}`} key={s.id}>
+              <span className="faq-toc-num">{s.num}</span>
+              <span>{s.title[lang]}</span>
             </a>
           ))}
         </nav>
