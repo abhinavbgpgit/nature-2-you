@@ -4901,14 +4901,6 @@ a {
   }
 }
 
-/* Natural Farming intro title ("ऐसा खेत जो खुद अपना पोषण करे।") — smaller than the
-   site-wide .section-title. Change the clamp() values to resize it:
-   clamp(smallest on phones, scales with screen width, largest on desktop). */
-.nf-first .section-title {
-  font-size: clamp(1.9rem, 3.6vw, 3.2rem);
-  line-height: 1.12;
-}
-
 .nf-first .nf-more-text {
   margin-top: -6px;
 }
@@ -4922,4 +4914,72 @@ a {
   .header-offset {
     padding-top: 74px;
   }
+}
+
+/* ---------- Natural Farming page: centred section headings ----------
+   The small label above each heading (प्राकृतिक खेती क्या है, फायदे, …) is the
+   section's main title; the old heading sits under it as a subtitle. */
+
+.nf-page .section-heading {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+/* main title */
+.nf-page .section-heading .eyebrow {
+  margin: 0;
+  color: #183022;
+  font-size: clamp(1.9rem, 3.6vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: normal; /* letter-spacing breaks Devanagari conjuncts */
+  line-height: 1.25;
+  text-transform: none;
+}
+
+/* short accent line under the title */
+.nf-page .section-heading .eyebrow::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 18px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1d5630, #d9b66f);
+}
+
+/* subtitle */
+.nf-page .section-heading .section-title {
+  max-width: none;
+  margin: 18px 0 0;
+  color: #5b6b5d;
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.nf-page .section-heading .section-copy {
+  max-width: 680px;
+  margin: 14px auto 0;
+  color: #6b766c;
+  font-size: 1rem;
+}
+
+.nf-first .nf-more-text {
+  margin-top: 0;
+}
+
+/* calm alternating backgrounds */
+.nf-page > section:nth-of-type(odd) {
+  background: #ffffff;
+}
+
+.nf-page > section:nth-of-type(even) {
+  background: #f7f4ec;
+}
+
+/* Natural Farming intro text: bold lines stand out in dark green */
+.nf-first .nf-more-text strong {
+  color: #1d5630;
+  font-weight: 700;
 }

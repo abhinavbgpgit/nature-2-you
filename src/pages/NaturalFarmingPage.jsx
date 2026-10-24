@@ -45,6 +45,10 @@ function useOpenSet() {
 
 const pad = (n) => String(n).padStart(2, "0")
 
+// Renders "**bold** rest" text: parts wrapped in ** become <strong>.
+const withBold = (text) =>
+  text.split("**").map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part))
+
 export default function NaturalFarmingPage({ language }) {
   const hi = language === "hi"
   const c = nfContent[hi ? "hi" : "en"]
@@ -53,7 +57,7 @@ export default function NaturalFarmingPage({ language }) {
   const [openSteps, toggleStep] = useOpenSet()
 
   return (
-    <>
+    <div className="nf-page">
       {/* Hero hidden for now — uncomment to bring back the background-image banner.
       <PageHero
         eyebrow={hi ? "प्राकृतिक खेती" : "Natural farming"}
@@ -69,20 +73,12 @@ export default function NaturalFarmingPage({ language }) {
 
       {/* What is natural farming — nf-first adds room for the fixed header now that the hero is hidden */}
       <section className="section bg-white nf-first">
+        <SectionIntro eyebrow={c.intro.eyebrow} title={c.intro.title} />
         <div className="nf-intro">
           <div>
-            <SectionIntro eyebrow={c.intro.eyebrow} title={c.intro.title} text={c.intro.lead} />
             <div className="nf-more-text">
-              {c.intro.more.map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-            </div>
-            <div className="nf-facts">
-              {c.intro.facts.map(([value, label]) => (
-                <div className="nf-fact" key={label}>
-                  <strong>{value}</strong>
-                  <span>{label}</span>
-                </div>
+              {c.intro.paras.map((p) => (
+                <p key={p}>{withBold(p)}</p>
               ))}
             </div>
           </div>
@@ -202,9 +198,9 @@ export default function NaturalFarmingPage({ language }) {
 
       {/* Getting started */}
       <section className="section">
+        <SectionIntro eyebrow={c.start.eyebrow} title={c.start.title} text={c.start.text} />
         <div className="nf-intro">
           <div>
-            <SectionIntro eyebrow={c.start.eyebrow} title={c.start.title} text={c.start.text} />
             <ol className="nf-steps">
               {c.start.steps.map((step, index) => {
                 const open = openSteps.has(index)
@@ -244,6 +240,6 @@ export default function NaturalFarmingPage({ language }) {
           ))}
         </div>
       </section>
-    </>
+    </div>
   )
 }

@@ -4,21 +4,18 @@
 export const nfContent = {
   en: {
     intro: {
-      eyebrow: "What is natural farming",
+      eyebrow: "What is natural farming?",
       title: "A farm that feeds itself.",
-      lead:
-        "Natural farming is a way of growing food that works with nature instead of against it. Rather than buying fertilisers and pesticides every season, the farmer builds living soil using what is already on the farm — native cow dung and urine, crop residue, local soil, jaggery and pulse flour.",
-      more: [
-        "The idea is simple: a handful of healthy soil contains billions of microorganisms. When they are fed and protected, they break down organic matter, unlock nutrients that are already present in the soil, and make them available to plant roots. The farmer's job is not to feed the plant directly, but to keep this underground workforce alive.",
-        "Chemical farming treats soil like an empty container that must be refilled every season. Natural farming treats it like a living body that can heal itself. In the first one or two seasons the change is slow, but as earthworms return and organic carbon rises, the soil becomes softer, holds more water and needs fewer inputs every year.",
-        "Because almost every input is prepared on the farm, the cost of cultivation falls sharply, the farmer is freed from debt for fertilisers, and the family eats food that is free from chemical residue.",
+      // **…** marks bold text.
+      paras: [
+        "**Natural farming is a way of farming in which the farmer works with nature, not against it.** Instead of buying fertilisers and pesticides from the market every season, the farmer uses what is already on the farm. Native cow dung and urine, leftover stalks and leaves, local soil, jaggery and gram flour are used to try to make the field's soil fertile.",
+        "The idea is simple: a handful of healthy soil holds millions of tiny creatures that we cannot see with our eyes. They rot down leaves and other organic matter in the soil and make it usable for plants. When the soil offers them the right conditions to live, they help improve soil health and help plants get nourishment. The farmer's job is not only to feed the plant, but also to keep the soil healthy.",
+        "In chemical farming the farmer often buys fertilisers and other inputs from the market to meet the crop's needs. Natural farming tries to meet the field's needs from what is available on the field itself. Rotating crops, spreading dry leaves and crop residue on the field, and growing different kinds of crops together can help with this.",
+        "As organic matter in the soil increases and its structure improves, it can soak up and hold water better. In some conditions this can reduce the need for irrigation. It also creates a good home for earthworms and other useful creatures. However, soil takes time to improve, and the results are not the same on every field.",
+        "A big advantage of natural farming is the chance to lower the cost of farming. If the farmer buys less fertiliser and pesticide, spending can fall. This can help the farmer depend less on loans. But at the start it is important to learn the right methods, understand the crop's needs and keep an eye on production.",
+        "**The real aim of natural farming is to keep soil healthy, save water, cut the cost of farming and make the farmer self-reliant.** The healthier the field, and the better the farmer keeps track of costs and earnings, the easier it becomes to make farming profitable over the long run.",
       ],
-      photo: "A farmer kneeling in a green field holding a handful of dark, moist soil with visible earthworms",
-      facts: [
-        ["Zero", "chemical fertiliser or pesticide"],
-        ["1 cow", "can support natural inputs for up to 30 acres"],
-        ["On-farm", "inputs made from local resources"],
-      ],
+      photo: "A lush natural farm and a farmhouse among the hills",
     },
     benefits: {
       eyebrow: "Benefits",
@@ -290,21 +287,18 @@ export const nfContent = {
 
   hi: {
     intro: {
-      eyebrow: "प्राकृतिक खेती क्या है",
+      eyebrow: "प्राकृतिक खेती क्या है?",
       title: "ऐसा खेत जो खुद अपना पोषण करे।",
-      lead:
-        "प्राकृतिक खेती खेती का वह तरीका है जो प्रकृति के खिलाफ नहीं, बल्कि उसके साथ मिलकर काम करता है। हर सीज़न बाज़ार से खाद और कीटनाशक खरीदने के बजाय किसान खेत में ही मौजूद चीज़ों से — देशी गाय का गोबर और गोमूत्र, फसल अवशेष, स्थानीय मिट्टी, गुड़ और बेसन — ज़िंदा मिट्टी तैयार करता है।",
-      more: [
-        "बात सीधी है: एक मुट्ठी स्वस्थ मिट्टी में करोड़ों सूक्ष्मजीव होते हैं। जब इन्हें भोजन और सुरक्षा मिलती है, तो ये जैविक पदार्थ को तोड़ते हैं, मिट्टी में पहले से मौजूद पोषक तत्वों को खोलते हैं और उन्हें पौधों की जड़ों तक पहुँचाते हैं। किसान का काम पौधे को सीधे खिलाना नहीं, बल्कि ज़मीन के नीचे काम करने वाली इस फौज को ज़िंदा रखना है।",
-        "रासायनिक खेती मिट्टी को एक खाली बर्तन मानती है जिसे हर सीज़न भरना पड़ता है। प्राकृतिक खेती मिट्टी को एक जीवित शरीर मानती है जो खुद को ठीक कर सकता है। पहले एक-दो सीज़न में बदलाव धीरे होता है, लेकिन जैसे-जैसे केंचुए लौटते हैं और जैविक कार्बन बढ़ता है, मिट्टी नरम होती है, ज़्यादा पानी रोकती है और हर साल कम इनपुट की ज़रूरत पड़ती है।",
-        "क्योंकि लगभग हर इनपुट खेत पर ही बनता है, इसलिए खेती की लागत काफी घट जाती है, किसान खाद के कर्ज़ से मुक्त होता है और परिवार रसायन-मुक्त भोजन खाता है।",
+      // **…** marks bold text.
+      paras: [
+        "**प्राकृतिक खेती खेती का वह तरीका है, जिसमें किसान प्रकृति के खिलाफ नहीं, बल्कि उसके साथ मिलकर काम करता है।** हर सीज़न बाज़ार से खाद और कीटनाशक खरीदने के बजाय किसान अपने खेत में मौजूद चीज़ों का इस्तेमाल करता है। देशी गाय का गोबर और गोमूत्र, फसल के बचे हुए डंठल-पत्ते, स्थानीय मिट्टी, गुड़ और बेसन जैसी चीज़ों से खेत की मिट्टी को उपजाऊ बनाने की कोशिश करता है।",
+        "बात सीधी है: एक मुट्ठी स्वस्थ मिट्टी में करोड़ों छोटे-छोटे जीव रहते हैं, जिन्हें हम अपनी आँखों से नहीं देख सकते। ये जीव मिट्टी में पड़े पत्तों और दूसरे जैविक पदार्थों को सड़ाकर पौधों के काम आने लायक बनाते हैं। जब मिट्टी में इन जीवों के रहने के लिए सही माहौल होता है, तो वे मिट्टी की सेहत सुधारने और पौधों को पोषण मिलने में मदद करते हैं। किसान का काम सिर्फ पौधे को खाद देना नहीं, बल्कि मिट्टी को स्वस्थ रखना भी है।",
+        "रासायनिक खेती में किसान अक्सर फसल की जरूरत पूरी करने के लिए बाज़ार से खाद और दूसरी चीज़ें खरीदता है। प्राकृतिक खेती में कोशिश होती है कि खेत की जरूरतें खेत में ही उपलब्ध चीज़ों से पूरी की जाएँ। इसके लिए फसल बदल-बदलकर उगाना, खेत में सूखी पत्तियों और फसल के अवशेषों को बिछाना तथा अलग-अलग तरह की फसलें लगाना उपयोगी हो सकता है।",
+        "जब मिट्टी में जैविक पदार्थ बढ़ता है और उसकी बनावट सुधरती है, तो वह पानी को बेहतर तरीके से सोख और रोक सकती है। इससे कुछ परिस्थितियों में सिंचाई की जरूरत कम हो सकती है। मिट्टी में केंचुओं और दूसरे उपयोगी जीवों के लिए भी अच्छा माहौल बनता है। हालाँकि, मिट्टी में सुधार होने में समय लगता है और हर खेत में इसका परिणाम एक जैसा नहीं होता।",
+        "प्राकृतिक खेती का एक बड़ा फायदा खेती की लागत कम करने की संभावना है। अगर किसान बाज़ार से खाद और कीटनाशक कम खरीदता है, तो उसका खर्च घट सकता है। इससे किसान को कर्ज़ पर निर्भरता कम करने में मदद मिल सकती है। लेकिन शुरुआत में सही तरीका सीखना, फसल की जरूरत समझना और उत्पादन पर नजर रखना जरूरी है।",
+        "**प्राकृतिक खेती का असली उद्देश्य है मिट्टी को स्वस्थ रखना, पानी बचाना, खेती का खर्च घटाना और किसान को आत्मनिर्भर बनाना।** क्योंकि खेत जितना स्वस्थ होगा और किसान अपनी लागत तथा कमाई का जितना अच्छा हिसाब रखेगा, खेती को लंबे समय तक फायदे का काम बनाना उतना ही आसान होगा।",
       ],
-      photo: "हरे खेत में घुटनों के बल बैठा किसान, हाथ में गीली काली मिट्टी जिसमें केंचुए दिख रहे हों",
-      facts: [
-        ["शून्य", "रासायनिक खाद या कीटनाशक"],
-        ["1 गाय", "से 30 एकड़ तक के लिए प्राकृतिक इनपुट"],
-        ["खेत पर", "स्थानीय संसाधनों से बने इनपुट"],
-      ],
+      photo: "पहाड़ों के बीच हरा-भरा प्राकृतिक खेत और किसान का घर",
     },
     benefits: {
       eyebrow: "फायदे",
