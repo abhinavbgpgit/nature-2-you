@@ -1270,12 +1270,12 @@ a {
 
 .section {
   width: 100%;
-  padding: 92px 20px;
+  padding: 42px 20px;
 }
 
 @media (min-width: 1024px) {
   .section {
-    padding: 118px 40px;
+    padding: 58px 40px;
   }
 }
 
@@ -4526,5 +4526,400 @@ a {
 
   .nf-table {
     min-width: 0 !important;
+  }
+}
+
+/* ---------- पौधों के पोषक तत्व — nutrients page (reuses sc- styles) ---------- */
+.nu-page {
+  --nu-primary: #1d5630;
+  --nu-secondary: #8a5a2b;
+  --nu-micro: #2b6f8a;
+  --nu-beneficial: #6b4c9a;
+}
+
+.nu-g-primary { --nu-c: var(--nu-primary); --nu-bg: #e8f3e0; }
+.nu-g-secondary { --nu-c: var(--nu-secondary); --nu-bg: #f5ebdd; }
+.nu-g-micro { --nu-c: var(--nu-micro); --nu-bg: #e2f0f5; }
+.nu-g-beneficial { --nu-c: var(--nu-beneficial); --nu-bg: #eee7f6; }
+
+.nu-eighteen {
+  margin-bottom: 20px !important;
+}
+
+.nu-split {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media (min-width: 960px) {
+  .nu-split {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.nu-split p {
+  margin: 0;
+  color: #3f4f41;
+}
+
+.nu-split .sc-h3 {
+  margin-top: 0;
+}
+
+.nu-ways {
+  margin-top: 18px;
+}
+
+.nu-side-photo {
+  aspect-ratio: 4 / 3;
+}
+
+.nu-diagram-card {
+  overflow-x: auto;
+  border: 1px solid rgba(57, 109, 68, 0.18);
+  border-radius: 14px;
+  background: #fffaf1;
+  padding: 14px;
+}
+
+.nu-diagram-card svg {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+}
+
+/* barrel */
+.nu-water { fill: #8ec3e0; }
+.nu-stave { fill: #c89a64; stroke: #8a5a2b; stroke-width: 1.5; }
+.nu-stave-short { fill: #e08a5a; stroke: #b5532b; }
+.nu-stave-text { fill: #3d2a12; font-size: 13px; font-weight: 800; }
+.nu-band { fill: #6b4423; }
+.nu-caption { fill: #183022; font-size: 13px; font-weight: 700; }
+
+/* photosynthesis + leaf map */
+.nu-sun { fill: #ffd34d; stroke: #f0a92b; stroke-width: 3; }
+.nu-ray { stroke: #f0a92b; stroke-width: 4; stroke-linecap: round; }
+.nu-stem { fill: none; stroke: #3e7d3a; stroke-width: 6; stroke-linecap: round; }
+.nu-leaf { fill: #6cb35a; stroke: #3e7d3a; stroke-width: 2; }
+.nu-leaf-new { fill: #e5d84f; stroke: #9a8f1e; stroke-width: 2; }
+.nu-leaf-old { fill: #c9b14a; stroke: #8a6a1e; stroke-width: 2; }
+.nu-soil { fill: #a2754b; }
+.nu-root { fill: none; stroke: #d9c3a0; stroke-width: 3; stroke-linecap: round; }
+.nu-arrow-line { fill: none; stroke: #8a5a2b; stroke-width: 2.5; stroke-dasharray: 6 5; }
+.nu-out { stroke: #2d8a5a; }
+.nu-water-line { stroke: #3b82b8; }
+.nu-label { fill: #183022; font-size: 15px; font-weight: 800; }
+.nu-small { font-size: 13px; }
+.nu-list { fill: #3f4f41; font-size: 14px; font-weight: 700; }
+.nu-sugar { fill: #fff3c4; stroke: #e0a92b; stroke-width: 2; }
+.nu-sugar-text { fill: #6b4423; font-size: 14px; font-weight: 800; }
+.nu-box-new { fill: #fdf6c9; stroke: #c9b01e; stroke-width: 2; }
+.nu-box-old { fill: #f5ebdd; stroke: #8a5a2b; stroke-width: 2; }
+
+.nu-equation {
+  display: inline-block;
+  margin-top: 16px !important;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px 16px;
+  color: #1d5630 !important;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.nu-sun-cards {
+  display: grid;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.nu-sun-card {
+  background: #ffffff;
+}
+
+.nu-sun-card .faq-checklist {
+  margin-top: 14px;
+}
+
+.nu-detail-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .nu-detail-grid.has-img {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+  }
+}
+
+.nu-detail-photo {
+  aspect-ratio: 4 / 3;
+}
+
+/* element filters + tiles */
+.nu-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.nu-chip {
+  border: 2px solid rgba(57, 109, 68, 0.25);
+  border-radius: 999px;
+  background: #ffffff;
+  padding: 7px 16px;
+  color: #183022;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.nu-chip.is-active {
+  border-color: #1d5630;
+  background: #1d5630;
+  color: #ffffff;
+}
+
+.nu-chip-primary.is-active { background: var(--nu-primary); border-color: var(--nu-primary); }
+.nu-chip-secondary.is-active { background: var(--nu-secondary); border-color: var(--nu-secondary); }
+.nu-chip-micro.is-active { background: var(--nu-micro); border-color: var(--nu-micro); }
+.nu-chip-beneficial.is-active { background: var(--nu-beneficial); border-color: var(--nu-beneficial); }
+
+.nu-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.nu-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background: var(--nu-bg);
+  padding: 14px;
+  color: #183022;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.nu-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(24, 48, 34, 0.12);
+}
+
+.nu-tile.is-selected {
+  border-color: var(--nu-c);
+  box-shadow: 0 12px 26px rgba(24, 48, 34, 0.16);
+}
+
+.nu-tile:focus-visible,
+.nu-chip:focus-visible {
+  outline: 3px solid #d9b66f;
+  outline-offset: 2px;
+}
+
+.nu-sym {
+  display: grid;
+  min-width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--nu-c);
+  padding: 0 8px;
+  color: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nu-tile strong {
+  margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.nu-tile small {
+  color: #3f4f41;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.nu-where {
+  margin-top: auto;
+  padding-top: 6px;
+  color: var(--nu-c);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+/* element detail */
+.nu-detail-wrap {
+  scroll-margin-top: calc(var(--sc-head) + 70px);
+  margin-top: 22px;
+}
+
+.nu-detail {
+  border: 2px solid var(--nu-c);
+  border-radius: 16px;
+  background: #fffdf8;
+  padding: 24px;
+}
+
+.nu-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.nu-sym-big {
+  min-width: 72px;
+  height: 72px;
+  font-size: 2rem;
+}
+
+.nu-detail-head h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.nu-tag {
+  margin: 2px 0 0;
+  color: var(--nu-c);
+  font-weight: 800;
+}
+
+.nu-detail h4 {
+  margin: 14px 0 6px;
+  color: #183022;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.nu-detail-grid h4:first-child {
+  margin-top: 0;
+}
+
+.nu-detail p {
+  margin: 0;
+  color: #3f4f41;
+}
+
+.nu-sources {
+  margin-top: 18px;
+  border-top: 1px dashed rgba(57, 109, 68, 0.25);
+  padding-top: 6px;
+}
+
+.nu-micro-note {
+  margin-top: 22px !important;
+}
+
+/* symptoms */
+.nu-leafmap-card svg {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.nu-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.nu-gallery .fm-photo {
+  aspect-ratio: 1 / 1;
+}
+
+.nu-gallery p {
+  margin: 8px 0 0;
+  color: #183022;
+  font-weight: 700;
+  text-align: center;
+}
+
+.nu-rule {
+  margin-top: 18px !important;
+}
+
+/* recipes */
+.nu-recipes {
+  display: grid;
+  gap: 16px;
+}
+
+.nu-num {
+  display: inline-grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  background: #1d5630;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.nu-recipe-card h3 {
+  margin-top: 10px;
+}
+
+.nu-links {
+  margin-top: 22px;
+}
+
+@media print {
+  .nu-filters,
+  .nu-tiles {
+    display: none !important;
+  }
+}
+
+/* Natural Farming page: first section sits under the fixed header (hero is hidden) */
+.nf-first {
+  padding-top: 170px;
+}
+
+@media (min-width: 1220px) {
+  .nf-first {
+    padding-top: 140px;
+  }
+}
+
+/* Natural Farming intro title ("ऐसा खेत जो खुद अपना पोषण करे।") — smaller than the
+   site-wide .section-title. Change the clamp() values to resize it:
+   clamp(smallest on phones, scales with screen width, largest on desktop). */
+.nf-first .section-title {
+  font-size: clamp(1.9rem, 3.6vw, 3.2rem);
+  line-height: 1.12;
+}
+
+.nf-first .nf-more-text {
+  margin-top: -6px;
+}
+
+/* Pushes a page below the fixed site header when it has no hero banner */
+.header-offset {
+  padding-top: 120px;
+}
+
+@media (min-width: 1220px) {
+  .header-offset {
+    padding-top: 74px;
   }
 }

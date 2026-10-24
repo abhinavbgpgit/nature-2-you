@@ -8,6 +8,7 @@ import FarmingModelPage from "./pages/FarmingModelPage"
 import ModuleDetailPage from "./pages/farming-modules/ModuleDetailPage"
 import IncubatorPage from "./pages/farming-modules/IncubatorPage"
 import AudiencePage from "./pages/audience/AudiencePage"
+import NutrientsPage from "./pages/nutrients/NutrientsPage"
 import SchoolCurriculumPage from "./pages/school-curriculum/SchoolCurriculumPage"
 import HomePage from "./pages/home/HomePage"
 import NaturalFarmingPage from "./pages/NaturalFarmingPage"
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage language={language} />} />
         <Route path="/natural-farming" element={<NaturalFarmingPage language={language} />} />
+        <Route path="/natural-farming/nutrients" element={<NutrientsPage language={language} />} />
         <Route path="/natural-farming/faq" element={<NaturalFarmingFaqPage language={language} />} />
         <Route path="/farming-model" element={<FarmingModelPage language={language} />} />
         <Route path="/farming-model/jugaad-incubator" element={<IncubatorPage language={language} />} />

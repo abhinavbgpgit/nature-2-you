@@ -10,12 +10,18 @@ const headerCopy = {
     nav: [
       ["Home", "/"],
       ["Natural Farming", "/natural-farming"],
+      ["Nutrients", "/natural-farming/nutrients"],
       ["Farming Model", "/farming-model"],
-      ["Videos", "/videos"],
-      ["Blog", "/blog"],
-      ["Research", "/research"],
-      ["Community", "/community"],
     ],
+    learn: {
+      label: "Learn",
+      items: [
+        ["Videos", "/videos"],
+        ["Blog", "/blog"],
+        ["Research", "/research"],
+        ["Community", "/community"],
+      ],
+    },
     investor: {
       label: "Investor",
       items: [
@@ -31,12 +37,18 @@ const headerCopy = {
     nav: [
       ["होम", "/"],
       ["प्राकृतिक खेती", "/natural-farming"],
+      ["पोषक तत्व", "/natural-farming/nutrients"],
       ["खेती मॉडल", "/farming-model"],
-      ["वीडियो", "/videos"],
-      ["ब्लॉग", "/blog"],
-      ["रिसर्च", "/research"],
-      ["समुदाय", "/community"],
     ],
+    learn: {
+      label: "सीखें",
+      items: [
+        ["वीडियो", "/videos"],
+        ["ब्लॉग", "/blog"],
+        ["रिसर्च", "/research"],
+        ["समुदाय", "/community"],
+      ],
+    },
     investor: {
       label: "निवेशक",
       items: [
@@ -148,12 +160,15 @@ export default function Header({ language, setLanguage }) {
           {rest.map(([label, to]) => (
             <NavLink
               to={to}
+              // "Nutrients" lives under /natural-farming, so match that link exactly.
+              end={to === "/natural-farming"}
               className={({ isActive }) => `nav-link ${isActive ? "selected" : ""}`}
               key={to}
             >
               {label}
             </NavLink>
           ))}
+          <NavDropdown menu={content.learn} />
           <NavDropdown menu={audienceMenus[language]} />
           <NavDropdown menu={content.investor} />
         </nav>
@@ -178,7 +193,7 @@ export default function Header({ language, setLanguage }) {
             {label}
           </NavLink>
         ))}
-        {[...audienceMenus[language].items, ...content.investor.items].map(([label, to]) => (
+        {[...content.learn.items, ...audienceMenus[language].items, ...content.investor.items].map(([label, to]) => (
           <NavLink to={to} key={to}>
             {label}
           </NavLink>

@@ -1,6 +1,7 @@
 // Photos for the Natural Farming page. Files live in src/assets/natural_farming;
 // `credit` and `source` record the photographer, licence and original page.
 import img_intro from "../assets/natural_farming/intro.jpg"
+import img_what_is from "../assets/natural_farming/what_is_natural_farming .png"
 import img_b_soil from "../assets/natural_farming/b_soil.jpg"
 import img_b_cost from "../assets/natural_farming/b_cost.jpg"
 import img_b_water from "../assets/natural_farming/b_water.jpg"
@@ -22,6 +23,8 @@ import img_start from "../assets/natural_farming/start.jpg"
 
 export const nfImages = {
   intro: { src: img_intro, credit: "Unsplash", source: "https://unsplash.com/photos/nvk0j5IAgwI" },
+  // Our own image — no credit line.
+  whatIs: { src: img_what_is },
   b_soil: { src: img_b_soil, credit: "goosmurf · CC BY 2.0", source: "https://www.flickr.com/photos/19349404@N00/3828755105" },
   b_cost: { src: img_b_cost, credit: "Ravi Kumar J · CC BY-SA 4.0", source: "https://commons.wikimedia.org/w/index.php?curid=60222196" },
   b_water: { src: img_b_water, credit: "Vis M · CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Drip_irrigation_and_mulching.jpg" },

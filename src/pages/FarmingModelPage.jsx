@@ -1,10 +1,10 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
-import { PageHero, SectionIntro } from "./pageShared"
+// import { PageHero } from "./pageShared" // used by the hidden hero
 import ModuleCards from "./farming-modules/ModuleCards"
 
 export default function FarmingModelPage({ language }) {
-  const hi = language === "hi"
+  // const hi = language === "hi" // used by the hidden hero
   const { hash } = useLocation()
 
   // "← All modules" links back to #modules; scroll there once the page renders.
@@ -14,7 +14,9 @@ export default function FarmingModelPage({ language }) {
   }, [hash])
 
   return (
-    <>
+    // header-offset keeps the first section clear of the fixed header now that the hero is hidden
+    <div className="header-offset">
+      {/* Hero hidden for now — uncomment (and drop header-offset) to bring back the background-image banner.
       <PageHero
         eyebrow={hi ? "खेती मॉडल" : "Farming model"}
         title={hi ? "बेहतर मिट्टी से बेहतर बाजार तक।" : "From better soil to better markets."}
@@ -25,9 +27,9 @@ export default function FarmingModelPage({ language }) {
         }
         image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2200&q=80"
       />
-    
+      */}
+
       <ModuleCards language={language} />
-      
-    </>
+    </div>
   )
 }

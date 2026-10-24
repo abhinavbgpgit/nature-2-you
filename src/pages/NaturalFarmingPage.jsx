@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { PageHero, SectionIntro } from "./pageShared"
+import { /* PageHero, */ SectionIntro } from "./pageShared"
 import { faqQuestions } from "./naturalFarmingFaqData"
 import { nfContent } from "./naturalFarmingContent"
 import { nfImages, benefitImages, ecosystemImages, principleImages } from "./naturalFarmingImages"
@@ -11,11 +11,13 @@ function Photo({ image, description, className = "" }) {
   return (
     <figure className={`nf-photo ${className}`}>
       <img src={src} alt={description} loading="lazy" />
-      <figcaption>
-        <a href={source} target="_blank" rel="noreferrer">
-          📷 {credit}
-        </a>
-      </figcaption>
+      {credit && (
+        <figcaption>
+          <a href={source} target="_blank" rel="noreferrer">
+            📷 {credit}
+          </a>
+        </figcaption>
+      )}
     </figure>
   )
 }
@@ -46,13 +48,13 @@ const pad = (n) => String(n).padStart(2, "0")
 export default function NaturalFarmingPage({ language }) {
   const hi = language === "hi"
   const c = nfContent[hi ? "hi" : "en"]
-  const [introOpen, setIntroOpen] = useState(false)
   const [openBenefits, toggleBenefit] = useOpenSet()
   const [openPrinciples, togglePrinciple] = useOpenSet()
   const [openSteps, toggleStep] = useOpenSet()
 
   return (
     <>
+      {/* Hero hidden for now — uncomment to bring back the background-image banner.
       <PageHero
         eyebrow={hi ? "प्राकृतिक खेती" : "Natural farming"}
         title={hi ? "प्राकृतिक खेती क्या है ?" : "Bringing the soil back to life."}
@@ -63,25 +65,18 @@ export default function NaturalFarmingPage({ language }) {
         }
         image="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=2200&q=80"
       />
+      */}
 
-      {/* What is natural farming */}
-      <section className="section bg-white">
+      {/* What is natural farming — nf-first adds room for the fixed header now that the hero is hidden */}
+      <section className="section bg-white nf-first">
         <div className="nf-intro">
           <div>
             <SectionIntro eyebrow={c.intro.eyebrow} title={c.intro.title} text={c.intro.lead} />
-            {introOpen && (
-              <div className="nf-more-text">
-                {c.intro.more.map((p) => (
-                  <p key={p}>{p}</p>
-                ))}
-              </div>
-            )}
-            <ReadMoreButton
-              open={introOpen}
-              onClick={() => setIntroOpen((v) => !v)}
-              more={c.readMore}
-              less={c.readLess}
-            />
+            <div className="nf-more-text">
+              {c.intro.more.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
             <div className="nf-facts">
               {c.intro.facts.map(([value, label]) => (
                 <div className="nf-fact" key={label}>
@@ -91,7 +86,7 @@ export default function NaturalFarmingPage({ language }) {
               ))}
             </div>
           </div>
-          <Photo image="intro" description={c.intro.photo} className="nf-photo-tall" />
+          <Photo image="whatIs" description={c.intro.photo} className="nf-photo-tall" />
         </div>
       </section>
 
